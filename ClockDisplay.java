@@ -39,4 +39,12 @@ public class ClockDisplay
             hora.increment();
         }
     }
+    /**
+     * Metodo getTiempo, permite obtener el tiempo a modo de cadena, con 5
+     * caracteres (la separacion de hora y min se hace con ":")
+       */
+    public String getTiempo()
+    {
+        return hora.getDisplayValue() + ":" + min.getDisplayValue();
+    }
 }

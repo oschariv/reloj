@@ -28,4 +28,15 @@ public class ClockDisplay
         hora.setValue(horas);
         min.setValue(minutos);
     }
+    
+    /**
+     * Metodo avanzarMin para avanzar un minuto a la hora establecida. 
+     */
+    public void avanzarMin()
+    {
+        min.increment();
+        if(min.getValue() == 0){
+            hora.increment();
+        }
+    }
 }
